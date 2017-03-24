@@ -6,7 +6,7 @@ import java.util.Stack;
 import tree.TreeNode;
 
 /**
- * 前序遍历
+ * 后序遍历
  * @author liukunsheng
  *
  */
@@ -16,8 +16,8 @@ public class Main {
 		TreeNode n2 = new TreeNode(2);
 		TreeNode n3 = new TreeNode(3);
 		n1.left=n2;
-		n2.right=n3;
-		ArrayList<Integer> l=postorderTraversal(n1);
+		n1.right=n3;
+		ArrayList<Integer> l=postorderTraversal2(n1);
 		System.out.println(l);
 		
 	}
@@ -57,7 +57,7 @@ public class Main {
         s.push(root);
          
         while (!s.isEmpty()) {
-            cur = s.peek();
+            cur = s.peek();//当前栈顶的元素
             if ((cur.left == null && cur.right == null)
                 || (pre != null && (pre == cur.left || pre == cur.right))) {
                 pre = cur;
