@@ -1,5 +1,9 @@
-package minimum_depth_of_binary_tree;
-
+package tree.minimumdepthtree;
+/**
+ * 二叉树的最小深度
+ * @author liukunsheng
+ *
+ */
 public class MyMain {
 	
 	public static class TreeNode{
