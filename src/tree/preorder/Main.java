@@ -18,7 +18,6 @@ public class Main {
     public static ArrayList<Integer> preorderTraversal(TreeNode root) {
         Stack<TreeNode> stack = new Stack<TreeNode>();
     	ArrayList<Integer> nodeList = new ArrayList<Integer>();
-    	Queue<TreeNode> queue = new LinkedList<TreeNode>();
     	if(root!=null){
     		stack.push(root);
     		while(!stack.isEmpty()){
@@ -29,9 +28,9 @@ public class Main {
     			}
     			if(temp.left!=null){
     				stack.push(temp.left);
-    			}	  			
-    		}  		
-    	}                                                                                                                                                                                                                                                                                                                                       
+    			}
+    		}
+    	}                                                                                                                                                                                                                                                                                                                                   
     	return nodeList;
         
     }

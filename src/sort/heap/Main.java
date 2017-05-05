@@ -39,7 +39,7 @@ public class Main {
 	 */
 	private static void adjustMinHeap(int[] a, int pos, int len) {
 		int temp;
-		int child;
+		int child;//2
 		for(temp=a[pos];2*pos+1<=len;pos=child){
 			child=2*pos+1;//左孩子
 			if(child<len&&a[child]>a[child+1]){
